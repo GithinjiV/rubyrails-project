@@ -1,0 +1,8 @@
+<%= render @feedback %>
+
+<div>
+  <%= link_to "Edit this feedback", edit_feedback_path(@feedback), class:"btn btn-primary" %> |
+  <%= link_to "Back to feedbacks", feedbacks_path, class:"btn btn-primary" %>
+
+  <%= button_to "Destroy this feedback", @feedback, method: :delete, class:"btn btn-primary" %>
+</div>
